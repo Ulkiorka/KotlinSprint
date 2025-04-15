@@ -5,11 +5,11 @@ fun main(){
     var to = "E4"
     var moveCounter = 1
 
-    println("Ход №$moveCounter: $from-$to")
+    println("$from-$to;$moveCounter")
 
     moveCounter++
     from = "D2"
     to = "D3"
 
-    println("Ход №$moveCounter: $from-$to")
+    println("$from-$to;$moveCounter")
 }
