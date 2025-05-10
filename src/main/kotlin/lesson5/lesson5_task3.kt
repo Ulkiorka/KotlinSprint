@@ -1,8 +1,11 @@
 package org.example.lesson5
 
+private const val BEGIN = 0
+private const val END = 42
+
 fun main() {
-    val number1 = (0..42).random()
-    val number2 = (0..42).random()
+    val number1 = (BEGIN..END).random()
+    val number2 = (BEGIN..END).random()
 
     println("Угадайте два числа от 0 до 42")
 
