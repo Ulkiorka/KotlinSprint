@@ -2,7 +2,7 @@ package org.example.lesson5
 
 fun main() {
     val number1 = (0..42).random()
-    val number2 = (number1 + (5..20).random()) % 42
+    val number2 = (0..42).random()
 
     println("Угадайте два числа от 0 до 42")
 
@@ -11,15 +11,9 @@ fun main() {
     print("Введите второе число: ")
     val userNumber2 = readln().toInt()
 
-    var totalMatches = 0
-    if (userNumber1 == number1 || userNumber1 == number2)
-        totalMatches++
-    if (userNumber2 == number1 || userNumber2 == number2)
-        totalMatches++
-
-    if (totalMatches == 2)
+    if (userNumber1 == number1 && userNumber2 == number2 || userNumber1 == number2 && userNumber2 == number1)
         println("Поздравляем! Вы выиграли главный приз!")
-    else if (totalMatches == 1)
+    else if (userNumber1 == number1 || userNumber1 == number2 || userNumber2 == number1 || userNumber2 == number2)
         println("Вы выиграли утешительный приз!")
     else
         println("Неудача!")
