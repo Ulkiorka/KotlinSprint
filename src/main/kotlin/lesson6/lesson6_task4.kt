@@ -1,10 +1,12 @@
 package org.example.lesson6
 
 fun main() {
-    val number =  (1..9).random()
+    val vienas = 1
+    val devyni = 9
+    val number =  (vienas..devyni).random()
     var attempt = 5
     var guess : Int
-    println("Необходимо за 5 попыток угадать число от 1 до 9")
+    println("Необходимо за $attempt попыток угадать число от $vienas до $devyni")
     while (attempt > 0){
         attempt--
         guess = readln().toInt()
