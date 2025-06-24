@@ -4,9 +4,10 @@ import kotlin.ranges.random
 
 fun main() {
     var authorized = false
+    val smsCodeRange = 1000..9999
 
     while (!authorized) {
-        val smsCode = (1000.. 10000).random()
+        val smsCode = smsCodeRange.random()
         println("Ваш код авторизации: $smsCode")
         print("Введите код из SMS: ")
         val userInput = readln().toInt()
