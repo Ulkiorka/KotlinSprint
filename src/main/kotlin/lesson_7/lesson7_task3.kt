@@ -1,4 +1,4 @@
-package org.example.lesson7
+package org.example.lesson_7
 
 fun main() {
     println("Введите число:")
