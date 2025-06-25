@@ -7,5 +7,5 @@ fun main(){
         println("Введите ингридиент ${i+1}:")
         ingredients[i] = readln()
     }
-    println("Список ингредиентов:" + ingredients.joinToString(" "))
+    println("Список ингредиентов:" + ingredients.joinToString(", "))
 }
