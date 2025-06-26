@@ -6,15 +6,16 @@ fun main(){
     println("Какой ингредиент необходимо заменить?")
     val outcast = readln()
 
-    if (!ingredients.contains(outcast)){
+    val index = ingredients.indexOf(outcast)
+    if (index == -1){
         println("Такого ингредиента нет в списке")
         return
     }
-
-    println("Каким ингредиентом необходимо заменить?")
-    val newIngredient = readln()
-    val index = ingredients.indexOf(outcast)
-    ingredients[index] = newIngredient
+    else {
+        println("Каким ингредиентом необходимо заменить?")
+        val newIngredient = readln()
+        ingredients[index] = newIngredient
+    }
 
     println("Готово! Вы сохранили следующий список: ${ingredients.joinToString(", ")}")
 }
