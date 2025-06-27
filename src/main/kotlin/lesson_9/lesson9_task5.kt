@@ -6,7 +6,10 @@ fun main(){
         mutableSet.add(readln().lowercase())
     }
 
-    val sortedList = mutableSet.sorted().toMutableList()
-    sortedList[0] = sortedList[0].replaceFirstChar { it.titlecase() }
-    println(sortedList.joinToString(", "))
+    val ingredients = mutableSet.sorted()
+        .joinToString(separator = ", ", postfix = ".")
+        .replaceFirstChar {
+            it.uppercase()
+        }
+    println(ingredients)
 }
