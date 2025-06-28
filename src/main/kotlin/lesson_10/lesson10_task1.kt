@@ -5,6 +5,7 @@ fun main() {
     println("Игрок выбросил число: $playerMove")
     val computerMove = rollDice()
     println("Компьютер выбросил число: $computerMove")
+
     when {
         playerMove > computerMove -> println("Победило человечество")
         playerMove < computerMove -> println("Победила машина")
