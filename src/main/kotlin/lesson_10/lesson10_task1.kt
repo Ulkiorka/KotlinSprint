@@ -1,6 +1,7 @@
 package org.example.lesson_10
-fun main(){
-    val playerMove   = rollDice()
+
+fun main() {
+    val playerMove = rollDice()
     println("Игрок выбросил число: $playerMove")
     val computerMove = rollDice()
     println("Компьютер выбросил число: $computerMove")
@@ -11,5 +12,5 @@ fun main(){
     }
 }
 
-fun rollDice()  =  (1..6).random()
+fun rollDice() = (1..6).random()
 
