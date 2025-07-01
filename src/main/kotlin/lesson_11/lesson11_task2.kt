@@ -7,7 +7,7 @@ fun main() {
     user.changeBio()
     println()
     user.showAllFields()
-    user.changeLogin()
+    user.changePassword()
     user.showAllFields()
 }
 
@@ -16,7 +16,7 @@ class User(
     val login: String ,
     var password: String ,
     val email: String ,
-    var bio: String = "" ,
+    var bio: String? = null ,
 ) {
     fun showAllFields() {
         println("userId = $userId")
@@ -31,16 +31,14 @@ class User(
         bio = readln()
     }
 
-    fun changeLogin(){
+    fun changePassword() {
         println("Введите текущий пароль: ")
         val text = readln()
-        if (password == text){
+        if (password == text) {
             println("Введите новый пароль: ")
             password = readln()
-        }
-        else{
+        } else {
             println("Неверный пароль")
-            return
         }
     }
 }
