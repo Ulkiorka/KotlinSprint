@@ -1,4 +1,4 @@
-package org.example.lesson_9
+package org.example.`lesson_1-10`.lesson_9
 
 fun main() {
     println("Введите 5 уникальных названий ингридиентов:")
