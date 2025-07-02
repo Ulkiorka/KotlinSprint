@@ -1,7 +1,7 @@
 package org.example.lesson_11
 
 fun main() {
-    val user = User(1 , "Пикачу" , "12345" , "mail@email.pika")
+    val user = User2(1 , "Пикачу" , "12345" , "mail@email.pika")
     user.showAllFields()
     println()
     user.changeBio()
@@ -11,7 +11,7 @@ fun main() {
     user.showAllFields()
 }
 
-class User(
+class User2(
     val userId: Int ,
     val login: String ,
     var password: String ,

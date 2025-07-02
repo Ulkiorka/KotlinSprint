@@ -9,8 +9,8 @@ fun main() {
 
     printGroupInfo(musicRoom)
 
-    val Vasya = User(userId = 1 , avatarURL = "http://site.com/vasya.jpg" , username = "Vasya")
-    val Kolya = User(userId = 2 , username = "Kolya")
+    val Vasya = User3(userId = 1 , avatarURL = "http://site.com/vasya.jpg" , username = "Vasya")
+    val Kolya = User3(userId = 2 , username = "Kolya")
 
     printUserInfo(Vasya)
     printUserInfo(Kolya)
@@ -29,9 +29,9 @@ class Room(
     val coverURL: String ,
     val groupName: String ,
 ) {
-    val users = mutableListOf<User>()
+    val users = mutableListOf<User3>()
 
-    fun addUser(user: User) {
+    fun addUser(user: User3) {
         users.add(user)
         println("В $groupName добавлен пользователь ${user.username}")
         println()
@@ -47,7 +47,7 @@ class Room(
     }
 }
 
-class User(
+class User3(
     val userId: Int ,
     val avatarURL: String = "http://site.com/noname.jpg" ,
     val username: String ,
@@ -67,7 +67,7 @@ fun printGroupInfo(room: Room) {
     println()
 }
 
-fun printUserInfo(user: User) {
+fun printUserInfo(user: User3) {
     println("Информация о пользователе:")
     println("userId: ${user.userId}")
     println("coverURL: ${user.avatarURL}")
