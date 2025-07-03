@@ -12,13 +12,10 @@ fun main() {
 }
 
 class weather_1(
-    _daytimeTemperature: Int ,
-    _nighttimeTemperature: Int ,
-    _precipitation: Boolean ,
+    var daytimeTemperature: Int ,
+    var nighttimeTemperature: Int ,
+    var precipitation: Boolean ,
 ) {
-    var daytimeTemperature = _daytimeTemperature
-    var nighttimeTemperature = _nighttimeTemperature
-    var precipitation = _precipitation
 
     fun printData() {
         println("daytimeTemperature = $daytimeTemperature")
