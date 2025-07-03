@@ -1,0 +1,24 @@
+package org.example.lesson_12
+
+fun main() {
+    val today = weather_3(100 , 0 , true)
+    val yesterday = weather_3(273 , 240 , false)
+}
+
+class weather_3(
+    _daytimeTemperatureKelvin: Int ,
+    _nighttimeTemperatureKelvin: Int ,
+    _precipitation: Boolean ,
+) {
+
+    var daytimeTemperatureCelsius = _daytimeTemperatureKelvin - 273
+    var nighttimeTemperatureCelsius = _nighttimeTemperatureKelvin - 273
+    var precipitation = _precipitation
+
+    init {
+        println("daytimeTemperature = $daytimeTemperatureCelsius")
+        println("nighttimeTemperature = $nighttimeTemperatureCelsius")
+        println("precipitation = $precipitation")
+        println()
+    }
+}
