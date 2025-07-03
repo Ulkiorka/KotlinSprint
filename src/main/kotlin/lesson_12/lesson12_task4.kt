@@ -16,9 +16,9 @@ class WeatherV4(
     var precipitation = _precipitation
 
     init {
-        println("daytimeTemperature = $daytimeTemperatureCelsius")
-        println("nighttimeTemperature = $nighttimeTemperatureCelsius")
-        println("precipitation = $precipitation")
+        println("Température diurne :$daytimeTemperatureCelsius C")
+        println("Température nocturne : $nighttimeTemperatureCelsius C")
+        println("Précipitation : $precipitation")
         println()
     }
 }
