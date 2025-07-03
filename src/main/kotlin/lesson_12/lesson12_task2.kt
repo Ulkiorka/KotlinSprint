@@ -1,8 +1,8 @@
 package org.example.lesson_12
 
 fun main() {
-    val today = weather_1(10 , -10 , true)
-    val yesterday = weather_1(0 , 5 , false)
+    val today = WeatherV2(10 , -10 , true)
+    val yesterday = WeatherV2(0 , 5 , false)
 
     today.printData()
     yesterday.printData()
@@ -11,7 +11,7 @@ fun main() {
     today.printData()
 }
 
-class weather_1(
+class WeatherV2(
     var daytimeTemperature: Int ,
     var nighttimeTemperature: Int ,
     var precipitation: Boolean ,
