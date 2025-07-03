@@ -12,15 +12,15 @@ fun main() {
 }
 
 class WeatherV2(
-    var daytimeTemperature: Int ,
-    var nighttimeTemperature: Int ,
-    var precipitation: Boolean ,
+    var daytimeTemperature: Int,
+    var nighttimeTemperature: Int,
+    var precipitation: Boolean,
 ) {
 
     fun printData() {
-        println("daytimeTemperature = $daytimeTemperature")
-        println("nighttimeTemperature = $nighttimeTemperature")
-        println("precipitation = $precipitation")
+        println("Дневная температура: $daytimeTemperature")
+        println("Ночная температура: $nighttimeTemperature")
+        println("Осадки = $precipitation")
         println()
     }
 }
