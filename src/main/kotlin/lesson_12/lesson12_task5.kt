@@ -27,14 +27,7 @@ class WeatherV5(
     _precipitation: Boolean ,
 ) {
 
-    var daytimeTemperatureCelsius = _daytimeTemperatureKelvin - 273
-    var nighttimeTemperatureCelsius = _nighttimeTemperatureKelvin - 273
-    var precipitation = _precipitation
-
-    init {
-        println("daytimeTemperature = $daytimeTemperatureCelsius")
-        println("nighttimeTemperature = $nighttimeTemperatureCelsius")
-        println("precipitation = $precipitation")
-        println()
-    }
+    val daytimeTemperatureCelsius = _daytimeTemperatureKelvin - 273
+    val nighttimeTemperatureCelsius = _nighttimeTemperatureKelvin - 273
+    val precipitation = _precipitation
 }
