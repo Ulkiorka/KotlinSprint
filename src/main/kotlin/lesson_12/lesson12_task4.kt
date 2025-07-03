@@ -1,11 +1,11 @@
 package org.example.lesson_12
 
 fun main() {
-    val today = weather_3(100 , 0 , true)
-    val yesterday = weather_3(273 , 240 , false)
+    val today = WeatherV4(100 , 0 , true)
+    val yesterday = WeatherV4(273 , 240 , false)
 }
 
-class weather_3(
+class WeatherV4(
     _daytimeTemperatureKelvin: Int ,
     _nighttimeTemperatureKelvin: Int ,
     _precipitation: Boolean ,
