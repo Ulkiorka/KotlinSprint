@@ -1,11 +1,11 @@
 package org.example.lesson_13
 
 fun main() {
-    val pepsi = PhoneBook("Pepsi" , 999666)
+    val pepsi = Contact("Pepsi" , 999666)
     pepsi.printContact()
 }
 
-class PhoneBook(
+class Contact(
     var name: String ,
     var phoneNumber: Long ,
     var company: String? = null
