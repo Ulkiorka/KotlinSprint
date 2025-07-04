@@ -6,9 +6,9 @@ fun main() {
 }
 
 class Contact(
-    var name: String ,
-    var phoneNumber: Long ,
-    var company: String? = null
+    val name: String ,
+    val phoneNumber: Long ,
+    val company: String? = null
 ) {
     fun printContact() {
         println(
