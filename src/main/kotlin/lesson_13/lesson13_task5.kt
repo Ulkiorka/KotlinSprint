@@ -1,20 +1,22 @@
 package org.example.lesson_13
 
 fun main() {
-    println("Введите имя контакта")
+    println("Введите имя контакта:")
     val name = readln()
-    println("Введите номер контакта")
+
+    println("Введите номер контакта:")
     val number = try {
         readln().toLong()
     } catch (e: NumberFormatException) {
         println("Ошибка при вводе номера контакта: $e")
         return
     }
-    println("Введите компанию")
+
+    println("Введите компанию:")
     val company = readln()
-    val contact = ContactV5(name, number, company)
-    println("Создан контакт: ")
-    contact.printContact()
+
+    println("Создан контакт:")
+    ContactV5(name, number, company).printContact()
 }
 
 class ContactV5(
