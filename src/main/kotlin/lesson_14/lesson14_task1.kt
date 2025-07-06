@@ -4,7 +4,6 @@ fun main() {
     val liner = Liner("Titanic", 23, 2208)
     val cargo = CargoShip("Evergreen", 14, 14, 199489)
     val icebreaker = Icebreaker("Ленин", 18, 236)
-
 }
 
 open class Liner(
