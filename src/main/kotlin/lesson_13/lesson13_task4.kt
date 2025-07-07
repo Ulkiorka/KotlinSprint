@@ -16,7 +16,11 @@ fun main() {
         }
 
         println("Введите компанию")
-        val company = readln().isEmpty().toString()
+        val companyInput = readln()
+        val company = if (companyInput.isEmpty())
+            null
+        else
+            companyInput
 
         phoneBook.add(ContactV4(name, phoneNumber, company))
         println("Добавить ещё контакт? (yes/да - продолжить, иначе - завершение ввода новых контактов)")
