@@ -28,6 +28,4 @@ class Instrument(name: String, count: Int) : Category(name, count), Search {
 
 }
 
-class Component(name: String, count: Int) : Category(name, count) {
-
-}
+class Component(name: String, count: Int) : Category(name, count)
